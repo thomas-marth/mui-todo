@@ -1,6 +1,8 @@
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import Header from "./components/header/index";
+import { Container } from "@mui/material";
+import Header from "./components/header";
+import SearchBar from "./components/searchBar";
 
 const mainTheme = createTheme({
   palette: {
@@ -48,6 +50,9 @@ function App() {
   return (
     <ThemeProvider theme={mainTheme}>
       <Header />
+      <Container sx={{ py: 2 }}>
+        <SearchBar />
+      </Container>
     </ThemeProvider>
   );
 }
