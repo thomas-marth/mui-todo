@@ -17,10 +17,9 @@ function SearchBar({ value = "", onChange = () => {} }) {
         ),
       }}
       sx={{
-        backgroundColor: "background.paper",
-        "& .MuiOutlinedInput-root": {
-          borderRadius: 50,
-        },
+        backgroundColor: "rgba(103, 80, 164, 0.05)",
+        borderRadius: 28,
+        outline: 0,
       }}
     />
   );
